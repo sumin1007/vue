@@ -5,7 +5,11 @@ for (let i = 0; i < 100; i++){
 }
 
 function callback(a) {
-    return 1;
+    let num = 0;
+    if(a[i] % 2 == 0){
+        return num++;
+    }
 }
 
+let sum = a.reduce(callback);
 console.log(a);
