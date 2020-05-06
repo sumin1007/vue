@@ -5,7 +5,7 @@ for (let i = 0; i < 100; i++){
 }
 
 for (let i = 0; i < 100; i++){
-    while (5 < (a[i] % 10) < 9){
+    if ((a[i] % 10) >= 5 && (a[i] % 10) <= 9){
         a.splice(i, 1);
     }
 }
