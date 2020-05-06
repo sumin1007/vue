@@ -1,13 +1,8 @@
-let a;
-let c = 2;
-let r = 3;
-let num = Number(0);
+let a = [];
 
-for (let i = 0; i < c; i++){
-    for (let j = 0; j < r; j++){
-        a[i][j] = num;
-        num++;
+for(let i = 0; i < 3; ++i)
+    for(let j = 0; j < 2; ++j){
+        a[i][j] = i*2 + j;
     }
-}
 
-console.log(a[1]);
+console.log(a);
