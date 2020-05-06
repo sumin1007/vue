@@ -4,7 +4,7 @@ for (let i = 0; i < 100; i++){
     a[i] = Math.floor(Math.random() * 100 + 1);
 }
 
-for (let i = 0; i < 100; i++){
+for (let i = 99; i > -1; i--){
     if ((a[i] % 10) >= 5 && (a[i] % 10) <= 9){
         a.splice(i, 1);
     }
