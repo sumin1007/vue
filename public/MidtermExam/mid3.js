@@ -1,11 +1,13 @@
-let a = [];
+let a;
+let c = 2;
+let r = 3;
+let num = Number(0);
 
-for (let i = 0; i < 3; i++){
-    for (let j = 0; j < 2; j++){
-        a[i][j] = n;
-        let n = 0;
-        for (n = 0; n < 6; n++);
+for (let i = 0; i < c; i++){
+    for (let j = 0; j < r; j++){
+        a[i][j] = num;
+        num++;
     }
 }
 
-console.log(a);
+console.log(a[1]);

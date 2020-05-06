@@ -13,7 +13,7 @@
 </head>
 <body>
   <div id="app">
-    <span type="button" v-on:click="increase">
+    <span type="button" v-on:click="i">
       {{ i }}
     </span>
   </div>
@@ -24,10 +24,9 @@
       data: {
         i : 0
       },
-      methods: {
-        increase() {
-          this.i++;
-        }
+      mounted: function(){
+        let callback = () => this.i++;
+        setInterval(callback, 1000);
       }
     })
    </script>
